@@ -25,9 +25,66 @@
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password..." required>
+          <input type="password" id="password" name="password" placeholder="Create a password..." required>
+        </div>
+        <div class="form-group">
+          <label for="course">Select a Course</label>
+          <select name="course" id="course" required>
+            <option value="">Choose a Course</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+            <option value="graphics">Graphic Design</option>
+            <option value="robotics">Robotics</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="about">About You</label>
+          <textarea name="about" id="about" placeholder="Tell us a little about yourself"></textarea>
         </div>
       </fieldset>
+      <fieldset>
+        <legend>Learning Level</legend>
+        <div class="option-group">
+          <div class="option-item">
+            <input type="radio" id="beginner" name="level" value="beginner" required>
+            <label for="beginner">Beginner</label>
+          </div>
+          <div class="option-item">
+            <input type="radio" id="intermediate" name="level" value="intermediate" required>
+            <label for="intermediate">Intermediate</label>
+          </div>
+          <div class="option-item">
+            <input type="radio" id="advanced" name="level" value="advanced" required>
+            <label for="advanced">Advanced</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Interests</legend>
+        <div class="option-group">
+          <div class="option-item">
+            <input type="checkbox" name="interests" id="coding" value="coding">
+            <label for="coding">Coding</label>
+          </div>
+          <div class="option-item">
+            <input type="checkbox" name="interests" id="design" value="design">
+            <label for="design">Design</label>
+          </div>
+          <div class="option-item">
+            <input type="checkbox" name="interests" id="robotics" value="robotics">
+            <label for="robotics">Robotics</label>
+          </div>
+          <div class="option-item">
+            <input type="checkbox" name="interests" id="blogging" value="blogging">
+            <label for="blogging">Blogging</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Create Account</button>
+        <button type="reset" class="btn-secondary">Reset</button>
+      </div>
     </form>
   </main>
 </body>
